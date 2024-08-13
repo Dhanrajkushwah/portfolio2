@@ -1,0 +1,36 @@
+.home-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .home-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Adjust color for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow to the text */
+  }
+  
+  .text-content h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  .text-content p {
+    margin: 10px 0 0;
+    font-size: 1.25rem;
+  }
+  

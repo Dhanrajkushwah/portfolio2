@@ -1,0 +1,307 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Card Styling */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1300px;
+  padding: 20px;
+}
+
+/* Card Content Styling */
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* About Me Section */
+.about-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.about-text h2 {
+  font-size: 1.4rem; /* Smaller heading size */
+  margin-bottom: 20px;
+  color: #f78da7;
+}
+
+.about-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* About Me Image */
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image .img1 {
+  width: 230px; /* Set the desired width */
+  height: 230px; /* Set the desired height */
+  border-radius: 50%; /* Creates a circular shape */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  border: 3px solid #ddd; /* Optional: adds a border around the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: transform 0.4s ease, box-shadow 0.4s ease; /* Smooth transition for transform and shadow */
+}
+
+.about-image .img1:hover {
+  transform: scale(1.1) rotate(10deg); /* Scale up slightly and rotate */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+
+
+/* Skills Section */
+.skills {
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  justify-content: center;
+}
+
+.skills h2 {
+  font-size: 1.4rem; /* Smaller heading size */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Skills Container */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+}
+
+/* Skill Card Styling */
+.skill-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 25px;
+  font-size: 1rem;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  width: 150px; /* Adjust width as needed */
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.experience {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+.experience h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.4rem; /* Smaller heading size */
+  color: #333;
+  font-weight: 400px;
+}
+
+.job-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.job-card {
+  background: #fff;
+  border-left: 5px solid #f78da7;;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.job-card h3 {
+  font-size: 1.4rem; /* Smaller heading size */
+  color: #f78da7;;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.job-card p {
+  margin: 10px 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.job-card p strong {
+  color: #333;
+}
+
+.job-card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-view {
+  display: inline-flex;
+  align-items: center;
+  background-color: black;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+  background-color: #f78da7;;
+}
+
+.btn-view i {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .job-card {
+    padding: 15px;
+  }
+
+  .btn-view {
+    font-size: 0.75rem;
+  }
+}
+
+.education {
+  padding: 40px 20px;
+  background-color: #e9ecef;
+}
+
+.education h2 {
+  font-size: 1.4rem; /* Smaller heading size */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.degree {
+  margin-bottom: 20px;
+}
+
+.degree h3 {
+  font-size: 1.3rem; /* Smaller heading size */
+  color: #f78da7;;
+}
+
+.degree p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Contact Section */
+.contact {
+  padding: 20px 20px;
+  background-color: #f6f9fe;
+}
+
+.contact h1 {
+  font-size: 1.4rem; /* Smaller heading size */
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+/* app.component.css or your specific component's CSS file */
+.name-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  background: #f0f0f0; /* Optional: background color for contrast */
+}
+
+.animated-name {
+  font-family: 'Poppins', sans-serif; /* Attractive font family */
+  font-size: 3rem;
+  color: #1abc9c; /* Change color as needed */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Optional: text shadow for depth */
+  animation: fadeInUp 2s ease-in-out;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.animated-name:hover {
+  color: #16a085; /* Change color on hover */
+  transform: scale(1.1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
